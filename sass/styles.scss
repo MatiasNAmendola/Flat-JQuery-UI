@@ -1,0 +1,36 @@
+@import 'config';
+@import 'datatables';
+.base{
+	background-color:$base;
+	color:white;
+}
+.firm{
+	background-color:$firm;
+	color:white;
+}
+.gray{
+	background-color:$gray;
+	color:white;
+}
+.lightgray{
+	background-color:$lightgray;
+}
+.inverse{
+	background-color:$inverse;
+}
+.success{
+	background-color:$success;
+	color:white;
+}
+.danger{
+	background-color:$danger;
+	color:white;
+}
+.warning{
+	background-color:$warning;
+	color:white;
+}
+.info{
+	background-color:$info;
+	color:white;
+}
