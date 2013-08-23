@@ -1,0 +1,899 @@
+3.2.10 (Media Mark)
+1a6869bb05e0c603d6891e453eaee3291256c373
+o:Sass::Tree::RootNode
+:@template"!/*
+ *  File:         demo_table_jui.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */
+
+
+/*
+ * jQuery UI specific styling
+ */
+
+.paging_two_button .ui-button {
+	float: left;
+	cursor: pointer;
+	* cursor: hand;
+}
+
+.paging_full_numbers .ui-button {
+	padding: 2px 6px;
+	margin: 0;
+	cursor: pointer;
+	* cursor: hand;
+	color: #333 !important;
+}
+
+.dataTables_paginate .ui-button {
+	margin-right: -0.1em !important;
+}
+
+.paging_full_numbers {
+	width: 350px !important;
+}
+
+.dataTables_wrapper .ui-toolbar {
+	padding: 5px;
+}
+
+.dataTables_paginate {
+	width: auto;
+}
+
+.dataTables_info {
+	padding-top: 3px;
+}
+
+table.display thead th {
+	padding: 3px 0px 3px 10px;
+	cursor: pointer;
+	* cursor: hand;
+}
+
+div.dataTables_wrapper .ui-widget-header {
+	font-weight: normal;
+}
+
+
+/*
+ * Sort arrow icon positioning
+ */
+table.display thead th div.DataTables_sort_wrapper {
+	position: relative;
+	padding-right: 20px;
+}
+
+table.display thead th div.DataTables_sort_wrapper span {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * Everything below this line is the same as demo_table.css. This file is
+ * required for 'cleanliness' of the markup
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+	position: relative;
+	clear: both;
+}
+
+.dataTables_processing {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 250px;
+	margin-left: -125px;
+	border: 1px solid #ddd;
+	text-align: center;
+	color: #999;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.dataTables_length {
+	width: 40%;
+	float: left;
+}
+
+.dataTables_filter {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+.dataTables_info {
+	width: 50%;
+	float: left;
+}
+
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+	margin: 0 auto;
+	width: 100%;
+	clear: both;
+	border-collapse: collapse;
+}
+
+table.display tfoot th {
+	padding: 3px 0px 3px 10px;
+	font-weight: bold;
+	font-weight: normal;
+}
+
+table.display tr.heading2 td {
+	border-bottom: 1px solid #aaa;
+}
+
+table.display td {
+	padding: 3px 10px;
+}
+
+table.display td.center {
+	text-align: center;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+	background: url('../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+	background: url('../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+	background: url('../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+	background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+	background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+
+
+
+table.display tr.odd.gradeA {
+	background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+	background-color: #eeffee;
+}
+
+table.display tr.odd.gradeC {
+	background-color: #ddddff;
+}
+
+table.display tr.even.gradeC {
+	background-color: #eeeeff;
+}
+
+table.display tr.odd.gradeX {
+	background-color: #ffdddd;
+}
+
+table.display tr.even.gradeX {
+	background-color: #ffeeee;
+}
+
+table.display tr.odd.gradeU {
+	background-color: #ddd;
+}
+
+table.display tr.even.gradeU {
+	background-color: #eee;
+}
+
+
+tr.odd {
+	background-color: #E2E4FF;
+}
+
+tr.even {
+	background-color: white;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+	clear: both;
+}
+
+.dataTables_scrollBody {
+	-webkit-overflow-scrolling: touch;
+}
+
+.top, .bottom {
+	padding: 15px;
+	background-color: #F5F5F5;
+	border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+	float: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.dataTables_empty {
+	text-align: center;
+}
+
+tfoot input {
+	margin: 0.5em 0;
+	width: 100%;
+	color: #444;
+}
+
+tfoot input.search_init {
+	color: #999;
+}
+
+td.group {
+	background-color: #d1cfd0;
+	border-bottom: 2px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+	width: 40%;
+}
+
+.paging_full_numbers a.paginate_button,
+ 	.paging_full_numbers a.paginate_active {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+	color: #333 !important;
+}
+
+.paging_full_numbers a.paginate_button {
+	background-color: #ddd;
+}
+
+.paging_full_numbers a.paginate_button:hover {
+	background-color: #ccc;
+	text-decoration: none !important;
+}
+
+.paging_full_numbers a.paginate_active {
+	background-color: #99B3FF;
+}
+
+table.display tr.even.row_selected td {
+	background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+	background-color: #9FAFD1;
+}
+
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+tr.odd td.sorting_1 {
+	background-color: #D3D6FF;
+}
+
+tr.odd td.sorting_2 {
+	background-color: #DADCFF;
+}
+
+tr.odd td.sorting_3 {
+	background-color: #E0E2FF;
+}
+
+tr.even td.sorting_1 {
+	background-color: #EAEBFF;
+}
+
+tr.even td.sorting_2 {
+	background-color: #F2F3FF;
+}
+
+tr.even td.sorting_3 {
+	background-color: #F9F9FF;
+}
+
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+tr.odd.gradeA td.sorting_1 {
+	background-color: #c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2 {
+	background-color: #d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3 {
+	background-color: #d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1 {
+	background-color: #d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2 {
+	background-color: #e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3 {
+	background-color: #e2ffe2;
+}
+
+tr.odd.gradeC td.sorting_1 {
+	background-color: #c4c4ff;
+}
+
+tr.odd.gradeC td.sorting_2 {
+	background-color: #d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3 {
+	background-color: #d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1 {
+	background-color: #d5d5ff;
+}
+
+tr.even.gradeC td.sorting_2 {
+	background-color: #e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3 {
+	background-color: #e2e2ff;
+}
+
+tr.odd.gradeX td.sorting_1 {
+	background-color: #ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2 {
+	background-color: #ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3 {
+	background-color: #ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1 {
+	background-color: #ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2 {
+	background-color: #ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3 {
+	background-color: #ffe2e2;
+}
+
+tr.odd.gradeU td.sorting_1 {
+	background-color: #c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2 {
+	background-color: #d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3 {
+	background-color: #d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1 {
+	background-color: #d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2 {
+	background-color: #e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3 {
+	background-color: #e2e2e2;
+}
+
+
+/*
+ * Row highlighting example
+ */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+	background-color: #ECFFB3;
+}
+
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+	background-color: #E6FF99;
+}:@has_childrenT:@options{ :@children[ko:Sass::Tree::CommentNode
+:
+@type:normal:@value["å/*
+ *  File:         demo_table_jui.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */;@;	[ :
+@lineio;
+
+;;;[")/*
+ * jQuery UI specific styling
+ */;@;	[ ;i#o:Sass::Tree::RuleNode;T;@:
+@tabsi ;	[o:Sass::Tree::PropNode:
+@name["
+float;o:Sass::Script::String;:identifier;"	left;@:@prop_syntax:new;@;i ;	[ ;i(o;;["cursor;o;;;;"pointer;@;;;@;i ;	[ ;i)o;;["* cursor;o;;;;"	hand;@;;;@;i ;	[ ;i*;i':
+@rule["".paging_two_button .ui-button:@parsed_ruleso:"Sass::Selector::CommaSequence:@members[o:Sass::Selector::Sequence;[o:#Sass::Selector::SimpleSequence
+;[o:Sass::Selector::Class;["paging_two_button:@filename" ;i';@0:@sourceso:Set:
+@hash{ ;i':@subject0o;
+;[o;;["ui-button;@0;i';@0;o; ;!{ ;i';"0;@0;i'o;;T;@;i ;	[
+o;;["padding;o;;;;"2px 6px;@;;;@;i ;	[ ;i.o;;["margin;o;;;;"0;@;;;@;i ;	[ ;i/o;;["cursor;o;;;;"pointer;@;;;@;i ;	[ ;i0o;;["* cursor;o;;;;"	hand;@;;;@;i ;	[ ;i1o;;["
+color;o;;;;"#333 !important;@;;;@;i ;	[ ;i2;i-;["$.paging_full_numbers .ui-button;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;i-;@e;o; ;!{ ;i-;"0o;
+;[o;;["ui-button;@e;i-;@e;o; ;!{ ;i-;"0;@e;i-o;;T;@;i ;	[o;;["margin-right;o;;;;"-0.1em !important;@;;;@;i ;	[ ;i6;i5;["$.dataTables_paginate .ui-button;o;;[o;;[o;
+;[o;;["dataTables_paginate;" ;i5;@};o; ;!{ ;i5;"0o;
+;[o;;["ui-button;@};i5;@};o; ;!{ ;i5;"0;@};i5o;;T;@;i ;	[o;;["
+width;o;;;;"350px !important;@;;;@;i ;	[ ;i:;i9;[".paging_full_numbers;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;i9;@ö;o; ;!{ ;i9;"0;@ö;i9o;;T;@;i ;	[o;;["padding;o;;;;"5px;@;;;@;i ;	[ ;i>;i=;["$.dataTables_wrapper .ui-toolbar;o;;[o;;[o;
+;[o;;["dataTables_wrapper;" ;i=;@∞;o; ;!{ ;i=;"0o;
+;[o;;["ui-toolbar;@∞;i=;@∞;o; ;!{ ;i=;"0;@∞;i=o;;T;@;i ;	[o;;["
+width;o;;;;"	auto;@;;;@;i ;	[ ;iB;iA;[".dataTables_paginate;o;;[o;;[o;
+;[o;;["dataTables_paginate;" ;iA;@Õ;o; ;!{ ;iA;"0;@Õ;iAo;;T;@;i ;	[o;;["padding-top;o;;;;"3px;@;;;@;i ;	[ ;iF;iE;[".dataTables_info;o;;[o;;[o;
+;[o;;["dataTables_info;" ;iE;@„;o; ;!{ ;iE;"0;@„;iEo;;T;@;i ;	[o;;["padding;o;;;;"3px 0px 3px 10px;@;;;@;i ;	[ ;iJo;;["cursor;o;;;;"pointer;@;;;@;i ;	[ ;iKo;;["* cursor;o;;;;"	hand;@;;;@;i ;	[ ;iL;iI;["table.display thead th;o;;[o;;[o;
+;[o:Sass::Selector::Element	:@namespace0;["
+table;" ;iIo;;["display;@;iI;@;o; ;!{ ;iI;"0o;
+;[o;#	;$0;["
+thead;@;iI;@;o; ;!{ ;iI;"0o;
+;[o;#	;$0;["th;@;iI;@;o; ;!{ ;iI;"0;@;iIo;;T;@;i ;	[o;;["font-weight;o;;;;"normal;@;;;@;i ;	[ ;iP;iO;["-div.dataTables_wrapper .ui-widget-header;o;;[o;;[o;
+;[o;#	;$0;["div;" ;iOo;;["dataTables_wrapper;@,;iO;@,;o; ;!{ ;iO;"0o;
+;[o;;["ui-widget-header;@,;iO;@,;o; ;!{ ;iO;"0;@,;iOo;
+
+;;;["*/*
+ * Sort arrow icon positioning
+ */;@;	[ ;iTo;;T;@;i ;	[o;;["position;o;;;;"relative;@;;;@;i ;	[ ;iXo;;["padding-right;o;;;;"	20px;@;;;@;i ;	[ ;iY;iW;["7table.display thead th div.DataTables_sort_wrapper;o;;[o;;[	o;
+;[o;#	;$0;["
+table;" ;iWo;;["display;@V;iW;@V;o; ;!{ ;iW;"0o;
+;[o;#	;$0;["
+thead;@V;iW;@V;o; ;!{ ;iW;"0o;
+;[o;#	;$0;["th;@V;iW;@V;o; ;!{ ;iW;"0o;
+;[o;#	;$0;["div;@V;iWo;;["DataTables_sort_wrapper;@V;iW;@V;o; ;!{ ;iW;"0;@V;iWo;;T;@;i ;	[	o;;["position;o;;;;"absolute;@;;;@;i ;	[ ;i]o;;["top;o;;;;"50%;@;;;@;i ;	[ ;i^o;;["margin-top;o;;;;"	-8px;@;;;@;i ;	[ ;i_o;;["
+right;o;;;;"0;@;;;@;i ;	[ ;i`;i\;["<table.display thead th div.DataTables_sort_wrapper span;o;;[o;;[
+o;
+;[o;#	;$0;["
+table;" ;i\o;;["display;@ô;i\;@ô;o; ;!{ ;i\;"0o;
+;[o;#	;$0;["
+thead;@ô;i\;@ô;o; ;!{ ;i\;"0o;
+;[o;#	;$0;["th;@ô;i\;@ô;o; ;!{ ;i\;"0o;
+;[o;#	;$0;["div;@ô;i\o;;["DataTables_sort_wrapper;@ô;i\;@ô;o; ;!{ ;i\;"0o;
+;[o;#	;$0;["	span;@ô;i\;@ô;o; ;!{ ;i\;"0;@ô;i\o;
+
+;;;["/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *
+ * Everything below this line is the same as demo_table.css. This file is
+ * required for 'cleanliness' of the markup
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */;@;	[ ;ifo;
+
+;;;["j/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */;@;	[ ;ioo;;T;@;i ;	[o;;["position;o;;;;"relative;@;;;@;i ;	[ ;ito;;["
+clear;o;;;;"	both;@;;;@;i ;	[ ;iu;is;[".dataTables_wrapper;o;;[o;;[o;
+;[o;;["dataTables_wrapper;" ;is;@ﬂ;o; ;!{ ;is;"0;@ﬂ;iso;;T;@;i ;	[o;;["position;o;;;;"absolute;@;;;@;i ;	[ ;iyo;;["top;o;;;;"0px;@;;;@;i ;	[ ;izo;;["	left;o;;;;"50%;@;;;@;i ;	[ ;i{o;;["
+width;o;;;;"
+250px;@;;;@;i ;	[ ;i|o;;["margin-left;o;;;;"-125px;@;;;@;i ;	[ ;i}o;;["border;o;;;;"1px solid #ddd;@;;;@;i ;	[ ;i~o;;["text-align;o;;;;"center;@;;;@;i ;	[ ;io;;["
+color;o;;;;"	#999;@;;;@;i ;	[ ;i{o;;["font-size;o;;;;"	11px;@;;;@;i ;	[ ;i|o;;["padding;o;;;;"
+2px 0;@;;;@;i ;	[ ;i};ix;[".dataTables_processing;o;;[o;;[o;
+;[o;;["dataTables_processing;" ;ix;@+;o; ;!{ ;ix;"0;@+;ixo;;T;@;i ;	[o;;["
+width;o;;;;"40%;@;;;@;i ;	[ ;iÅo;;["
+float;o;;;;"	left;@;;;@;i ;	[ ;iÇ;iÄ;[".dataTables_length;o;;[o;;[o;
+;[o;;["dataTables_length;" ;iÄ;@G;o; ;!{ ;iÄ;"0;@G;iÄo;;T;@;i ;	[o;;["
+width;o;;;;"50%;@;;;@;i ;	[ ;iÜo;;["
+float;o;;;;"
+right;@;;;@;i ;	[ ;iáo;;["text-align;o;;;;"
+right;@;;;@;i ;	[ ;ià;iÖ;[".dataTables_filter;o;;[o;;[o;
+;[o;;["dataTables_filter;" ;iÖ;@i;o; ;!{ ;iÖ;"0;@i;iÖo;;T;@;i ;	[o;;["
+width;o;;;;"50%;@;;;@;i ;	[ ;iåo;;["
+float;o;;;;"	left;@;;;@;i ;	[ ;iç;iã;[".dataTables_info;o;;[o;;[o;
+;[o;;["dataTables_info;" ;iã;@Ö;o; ;!{ ;iã;"0;@Ö;ião;;T;@;i ;	[o;;["
+float;o;;;;"
+right;@;;;@;i ;	[ ;iëo;;["text-align;o;;;;"
+right;@;;;@;i ;	[ ;ií;iê;[".dataTables_paginate;o;;[o;;[o;
+;[o;;["dataTables_paginate;" ;iê;@°;o; ;!{ ;iê;"0;@°;iêo;
+
+;;;["i/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */;@;	[ ;ióo;;T;@;i ;	[	o;;["margin;o;;;;"0 auto;@;;;@;i ;	[ ;iõo;;["
+width;o;;;;"	100%;@;;;@;i ;	[ ;iúo;;["
+clear;o;;;;"	both;@;;;@;i ;	[ ;iùo;;["border-collapse;o;;;;"collapse;@;;;@;i ;	[ ;iû;iö;["table.display;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iöo;;["display;@Õ;iö;@Õ;o; ;!{ ;iö;"0;@Õ;iöo;;T;@;i ;	[o;;["padding;o;;;;"3px 0px 3px 10px;@;;;@;i ;	[ ;i¢o;;["font-weight;o;;;;"	bold;@;;;@;i ;	[ ;i£o;;["font-weight;o;;;;"normal;@;;;@;i ;	[ ;i§;i°;["table.display tfoot th;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i°o;;["display;@Ú;i°;@Ú;o; ;!{ ;i°;"0o;
+;[o;#	;$0;["
+tfoot;@Ú;i°;@Ú;o; ;!{ ;i°;"0o;
+;[o;#	;$0;["th;@Ú;i°;@Ú;o; ;!{ ;i°;"0;@Ú;i°o;;T;@;i ;	[o;;["border-bottom;o;;;;"1px solid #aaa;@;;;@;i ;	[ ;i®;iß;["!table.display tr.heading2 td;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;ißo;;["display;@;iß;@;o; ;!{ ;iß;"0o;
+;[o;#	;$0;["tr;@;ißo;;["heading2;@;iß;@;o; ;!{ ;iß;"0o;
+;[o;#	;$0;["td;@;iß;@;o; ;!{ ;iß;"0;@;ißo;;T;@;i ;	[o;;["padding;o;;;;"3px 10px;@;;;@;i ;	[ ;i¨;i´;["table.display td;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i´o;;["display;@C;i´;@C;o; ;!{ ;i´;"0o;
+;[o;#	;$0;["td;@C;i´;@C;o; ;!{ ;i´;"0;@C;i´o;;T;@;i ;	[o;;["text-align;o;;;;"center;@;;;@;i ;	[ ;i∞;iØ;["table.display td.center;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iØo;;["display;@c;iØ;@c;o; ;!{ ;iØ;"0o;
+;[o;#	;$0;["td;@c;iØo;;["center;@c;iØ;@c;o; ;!{ ;iØ;"0;@c;iØo;
+
+;;;["i/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */;@;	[ ;iµo;;T;@;i ;	[o;;["background;o:Sass::Script::List	:@separator:
+space;[	o:Sass::Script::Funcall;"url;@:@splat0;i∫:@keywords{ :
+@args[o;	;:string;"../images/sort_asc.png;@;i∫o;	;;;"no-repeat;@;i∫o;	;;;"center;@;i∫o;	;;;"
+right;@;i∫;@;i∫;;;@;i ;	[ ;i∫;iπ;[".sorting_asc;o;;[o;;[o;
+;[o;;["sorting_asc;" ;iπ;@ñ;o; ;!{ ;iπ;"0;@ñ;iπo;;T;@;i ;	[o;;["background;o;%	;&;';[	o;(;"url;@;)0;iæ;*{ ;+[o;	;;,;"../images/sort_desc.png;@;iæo;	;;;"no-repeat;@;iæo;	;;;"center;@;iæo;	;;;"
+right;@;iæ;@;iæ;;;@;i ;	[ ;iæ;iΩ;[".sorting_desc;o;;[o;;[o;
+;[o;;["sorting_desc;" ;iΩ;@∏;o; ;!{ ;iΩ;"0;@∏;iΩo;;T;@;i ;	[o;;["background;o;%	;&;';[	o;(;"url;@;)0;i¬;*{ ;+[o;	;;,;"../images/sort_both.png;@;i¬o;	;;;"no-repeat;@;i¬o;	;;;"center;@;i¬o;	;;;"
+right;@;i¬;@;i¬;;;@;i ;	[ ;i¬;i¡;[".sorting;o;;[o;;[o;
+;[o;;["sorting;" ;i¡;@⁄;o; ;!{ ;i¡;"0;@⁄;i¡o;;T;@;i ;	[o;;["background;o;%	;&;';[	o;(;"url;@;)0;i∆;*{ ;+[o;	;;,;"$../images/sort_asc_disabled.png;@;i∆o;	;;;"no-repeat;@;i∆o;	;;;"center;@;i∆o;	;;;"
+right;@;i∆;@;i∆;;;@;i ;	[ ;i∆;i≈;[".sorting_asc_disabled;o;;[o;;[o;
+;[o;;["sorting_asc_disabled;" ;i≈;@¸;o; ;!{ ;i≈;"0;@¸;i≈o;;T;@;i ;	[o;;["background;o;%	;&;';[	o;(;"url;@;)0;i ;*{ ;+[o;	;;,;"%../images/sort_desc_disabled.png;@;i o;	;;;"no-repeat;@;i o;	;;;"center;@;i o;	;;;"
+right;@;i ;@;i ;;;@;i ;	[ ;i ;i…;[".sorting_desc_disabled;o;;[o;;[o;
+;[o;;["sorting_desc_disabled;" ;i…;@;o; ;!{ ;i…;"0;@;i…o;
+
+;;;["m/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */;@;	[ ;i–o;;T;@;i ;	[o;;["background-color;o;;;;"#ddffdd;@;;;@;i ;	[ ;i‘;i”;[" table.display tr.odd.gradeA;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i”o;;["display;@8;i”;@8;o; ;!{ ;i”;"0o;
+;[o;#	;$0;["tr;@8;i”o;;["odd;@8;i”o;;["gradeA;@8;i”;@8;o; ;!{ ;i”;"0;@8;i”o;;T;@;i ;	[o;;["background-color;o;;;;"#eeffee;@;;;@;i ;	[ ;iÿ;i◊;["!table.display tr.even.gradeA;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i◊o;;["display;@^;i◊;@^;o; ;!{ ;i◊;"0o;
+;[o;#	;$0;["tr;@^;i◊o;;["	even;@^;i◊o;;["gradeA;@^;i◊;@^;o; ;!{ ;i◊;"0;@^;i◊o;;T;@;i ;	[o;;["background-color;o;;;;"#ddffdd;@;;;@;i ;	[ ;iﬂ;iﬁ;[" table.display tr.odd.gradeA;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iﬁo;;["display;@Ñ;iﬁ;@Ñ;o; ;!{ ;iﬁ;"0o;
+;[o;#	;$0;["tr;@Ñ;iﬁo;;["odd;@Ñ;iﬁo;;["gradeA;@Ñ;iﬁ;@Ñ;o; ;!{ ;iﬁ;"0;@Ñ;iﬁo;;T;@;i ;	[o;;["background-color;o;;;;"#eeffee;@;;;@;i ;	[ ;i„;i‚;["!table.display tr.even.gradeA;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i‚o;;["display;@™;i‚;@™;o; ;!{ ;i‚;"0o;
+;[o;#	;$0;["tr;@™;i‚o;;["	even;@™;i‚o;;["gradeA;@™;i‚;@™;o; ;!{ ;i‚;"0;@™;i‚o;;T;@;i ;	[o;;["background-color;o;;;;"#ddddff;@;;;@;i ;	[ ;iÁ;iÊ;[" table.display tr.odd.gradeC;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iÊo;;["display;@–;iÊ;@–;o; ;!{ ;iÊ;"0o;
+;[o;#	;$0;["tr;@–;iÊo;;["odd;@–;iÊo;;["gradeC;@–;iÊ;@–;o; ;!{ ;iÊ;"0;@–;iÊo;;T;@;i ;	[o;;["background-color;o;;;;"#eeeeff;@;;;@;i ;	[ ;iÎ;iÍ;["!table.display tr.even.gradeC;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iÍo;;["display;@ˆ;iÍ;@ˆ;o; ;!{ ;iÍ;"0o;
+;[o;#	;$0;["tr;@ˆ;iÍo;;["	even;@ˆ;iÍo;;["gradeC;@ˆ;iÍ;@ˆ;o; ;!{ ;iÍ;"0;@ˆ;iÍo;;T;@;i ;	[o;;["background-color;o;;;;"#ffdddd;@;;;@;i ;	[ ;iÔ;iÓ;[" table.display tr.odd.gradeX;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iÓo;;["display;@;iÓ;@;o; ;!{ ;iÓ;"0o;
+;[o;#	;$0;["tr;@;iÓo;;["odd;@;iÓo;;["gradeX;@;iÓ;@;o; ;!{ ;iÓ;"0;@;iÓo;;T;@;i ;	[o;;["background-color;o;;;;"#ffeeee;@;;;@;i ;	[ ;iÛ;iÚ;["!table.display tr.even.gradeX;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iÚo;;["display;@B;iÚ;@B;o; ;!{ ;iÚ;"0o;
+;[o;#	;$0;["tr;@B;iÚo;;["	even;@B;iÚo;;["gradeX;@B;iÚ;@B;o; ;!{ ;iÚ;"0;@B;iÚo;;T;@;i ;	[o;;["background-color;o;;;;"	#ddd;@;;;@;i ;	[ ;i˜;iˆ;[" table.display tr.odd.gradeU;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;iˆo;;["display;@h;iˆ;@h;o; ;!{ ;iˆ;"0o;
+;[o;#	;$0;["tr;@h;iˆo;;["odd;@h;iˆo;;["gradeU;@h;iˆ;@h;o; ;!{ ;iˆ;"0;@h;iˆo;;T;@;i ;	[o;;["background-color;o;;;;"	#eee;@;;;@;i ;	[ ;i˚;i˙;["!table.display tr.even.gradeU;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i˙o;;["display;@é;i˙;@é;o; ;!{ ;i˙;"0o;
+;[o;#	;$0;["tr;@é;i˙o;;["	even;@é;i˙o;;["gradeU;@é;i˙;@é;o; ;!{ ;i˙;"0;@é;i˙o;;T;@;i ;	[o;;["background-color;o;;;;"#E2E4FF;@;;;@;i ;	[ ;i ;iˇ;["tr.odd;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iˇo;;["odd;@¥;iˇ;@¥;o; ;!{ ;iˇ;"0;@¥;iˇo;;T;@;i ;	[o;;["background-color;o;;;;"
+white;@;;;@;i ;	[ ;i;i;["tr.even;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;io;;["	even;@Õ;i;@Õ;o; ;!{ ;i;"0;@Õ;io;
+
+;;;["[/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */;@;	[ ;io;;T;@;i ;	[o;;["
+clear;o;;;;"	both;@;;;@;i ;	[ ;i;i;[".dataTables_scroll;o;;[o;;[o;
+;[o;;["dataTables_scroll;" ;i;@Í;o; ;!{ ;i;"0;@Í;io;;T;@;i ;	[o;;["-webkit-overflow-scrolling;o;;;;"
+touch;@;;;@;i ;	[ ;i;i;[".dataTables_scrollBody;o;;[o;;[o;
+;[o;;["dataTables_scrollBody;" ;i;@ ;o; ;!{ ;i;"0;@ ;io;;T;@;i ;	[o;;["padding;o;;;;"	15px;@;;;@;i ;	[ ;io;;["background-color;o;;;;"#F5F5F5;@;;;@;i ;	[ ;io;;["border;o;;;;"1px solid #CCCCCC;@;;;@;i ;	[ ;i;i;[".top, .bottom;o;;[o;;[o;
+;[o;;["top;" ;i;@";o; ;!{ ;i;"0o;;[o;
+;[o;;["bottom;@";i;@";o; ;!{ ;i;"0;@";io;;T;@;i ;	[o;;["
+float;o;;;;"	none;@;;;@;i ;	[ ;i;i;[".top .dataTables_info;o;;[o;;[o;
+;[o;;["top;" ;i;@A;o; ;!{ ;i;"0o;
+;[o;;["dataTables_info;@A;i;@A;o; ;!{ ;i;"0;@A;io;;T;@;i ;	[o;;["
+clear;o;;;;"	both;@;;;@;i ;	[ ;i!;i ;[".clear;o;;[o;;[o;
+;[o;;["
+clear;" ;i ;@^;o; ;!{ ;i ;"0;@^;i o;;T;@;i ;	[o;;["text-align;o;;;;"center;@;;;@;i ;	[ ;i%;i$;[".dataTables_empty;o;;[o;;[o;
+;[o;;["dataTables_empty;" ;i$;@t;o; ;!{ ;i$;"0;@t;i$o;;T;@;i ;	[o;;["margin;o;;;;"0.5em 0;@;;;@;i ;	[ ;i)o;;["
+width;o;;;;"	100%;@;;;@;i ;	[ ;i*o;;["
+color;o;;;;"	#444;@;;;@;i ;	[ ;i+;i(;["tfoot input;o;;[o;;[o;
+;[o;#	;$0;["
+tfoot;" ;i(;@ñ;o; ;!{ ;i(;"0o;
+;[o;#	;$0;["
+input;@ñ;i(;@ñ;o; ;!{ ;i(;"0;@ñ;i(o;;T;@;i ;	[o;;["
+color;o;;;;"	#999;@;;;@;i ;	[ ;i/;i.;["tfoot input.search_init;o;;[o;;[o;
+;[o;#	;$0;["
+tfoot;" ;i.;@≥;o; ;!{ ;i.;"0o;
+;[o;#	;$0;["
+input;@≥;i.o;;["search_init;@≥;i.;@≥;o; ;!{ ;i.;"0;@≥;i.o;;T;@;i ;	[o;;["background-color;o;;;;"#d1cfd0;@;;;@;i ;	[ ;i3o;;["border-bottom;o;;;;"2px solid #A19B9E;@;;;@;i ;	[ ;i4o;;["border-top;o;;;;"2px solid #A19B9E;@;;;@;i ;	[ ;i5;i2;["td.group;o;;[o;;[o;
+;[o;#	;$0;["td;" ;i2o;;["
+group;@ﬂ;i2;@ﬂ;o; ;!{ ;i2;"0;@ﬂ;i2o;;T;@;i ;	[o;;["background-color;o;;;;"#d1cfd0;@;;;@;i ;	[ ;i9o;;["border;o;;;;"2px solid #A19B9E;@;;;@;i ;	[ ;i:;i8;["td.details;o;;[o;;[o;
+;[o;#	;$0;["td;" ;i8o;;["details;@˛;i8;@˛;o; ;!{ ;i8;"0;@˛;i8o;;T;@;i ;	[o;;["
+width;o;;;;"40%;@;;;@;i ;	[ ;i?;i>;["0.example_alt_pagination div.dataTables_info;o;;[o;;[o;
+;[o;;["example_alt_pagination;" ;i>;@;o; ;!{ ;i>;"0o;
+;[o;#	;$0;["div;@;i>o;;["dataTables_info;@;i>;@;o; ;!{ ;i>;"0;@;i>o;;T;@;i ;	[o;;["border;o;;;;"1px solid #aaa;@;;;@;i ;	[ ;iDo;;["-webkit-border-radius;o;;;;"5px;@;;;@;i ;	[ ;iEo;;["-moz-border-radius;o;;;;"5px;@;;;@;i ;	[ ;iFo;;["padding;o;;;;"2px 5px;@;;;@;i ;	[ ;iGo;;["margin;o;;;;"
+0 3px;@;;;@;i ;	[ ;iHo;;["cursor;o;;;;"pointer;@;;;@;i ;	[ ;iIo;;["*cursor;o;;;;"	hand;@;;;@;i ;	[ ;iJo;;["
+color;o;;;;"#333 !important;@;;;@;i ;	[ ;iK;iC;["U.paging_full_numbers a.paginate_button,
+ 	.paging_full_numbers a.paginate_active;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;iC;@a;o; ;!{ ;iC;"0o;
+;[o;#	;$0;["a;@a;iCo;;["paginate_button;@a;iC;@a;o; ;!{ ;iC;"0o;;["
+o;
+;[o;;["paging_full_numbers;@a;iC;@a;o; ;!{ ;iC;"0o;
+;[o;#	;$0;["a;@a;iCo;;["paginate_active;@a;iC;@a;o; ;!{ ;iC;"0;@a;iCo;;T;@;i ;	[o;;["background-color;o;;;;"	#ddd;@;;;@;i ;	[ ;iO;iN;["+.paging_full_numbers a.paginate_button;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;iN;@ï;o; ;!{ ;iN;"0o;
+;[o;#	;$0;["a;@ï;iNo;;["paginate_button;@ï;iN;@ï;o; ;!{ ;iN;"0;@ï;iNo;;T;@;i ;	[o;;["background-color;o;;;;"	#ccc;@;;;@;i ;	[ ;iSo;;["text-decoration;o;;;;"none !important;@;;;@;i ;	[ ;iT;iR;["1.paging_full_numbers a.paginate_button:hover;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;iR;@ª;o; ;!{ ;iR;"0o;
+;[o;#	;$0;["a;@ª;iRo;;["paginate_button;@ª;iRo:Sass::Selector::Pseudo
+:	@arg0;["
+hover;:
+class;@ª;iR;@ª;o; ;!{ ;iR;"0;@ª;iRo;;T;@;i ;	[o;;["background-color;o;;;;"#99B3FF;@;;;@;i ;	[ ;iX;iW;["+.paging_full_numbers a.paginate_active;o;;[o;;[o;
+;[o;;["paging_full_numbers;" ;iW;@ﬁ;o; ;!{ ;iW;"0o;
+;[o;#	;$0;["a;@ﬁ;iWo;;["paginate_active;@ﬁ;iW;@ﬁ;o; ;!{ ;iW;"0;@ﬁ;iWo;;T;@;i ;	[o;;["background-color;o;;;;"#B0BED9;@;;;@;i ;	[ ;i\;i[;["*table.display tr.even.row_selected td;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i[o;;["display;@˛;i[;@˛;o; ;!{ ;i[;"0o;
+;[o;#	;$0;["tr;@˛;i[o;;["	even;@˛;i[o;;["row_selected;@˛;i[;@˛;o; ;!{ ;i[;"0o;
+;[o;#	;$0;["td;@˛;i[;@˛;o; ;!{ ;i[;"0;@˛;i[o;;T;@;i ;	[o;;["background-color;o;;;;"#9FAFD1;@;;;@;i ;	[ ;i`;i_;[")table.display tr.odd.row_selected td;o;;[o;;[o;
+;[o;#	;$0;["
+table;" ;i_o;;["display;@+;i_;@+;o; ;!{ ;i_;"0o;
+;[o;#	;$0;["tr;@+;i_o;;["odd;@+;i_o;;["row_selected;@+;i_;@+;o; ;!{ ;i_;"0o;
+;[o;#	;$0;["td;@+;i_;@+;o; ;!{ ;i_;"0;@+;i_o;
+
+;;;["*/*
+ * Sorting classes for columns
+ */;@;	[ ;ido;
+
+;;;["$/* For the standard odd/even */;@;	[ ;igo;;T;@;i ;	[o;;["background-color;o;;;;"#D3D6FF;@;;;@;i ;	[ ;ii;ih;["tr.odd td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iho;;["odd;@`;ih;@`;o; ;!{ ;ih;"0o;
+;[o;#	;$0;["td;@`;iho;;["sorting_1;@`;ih;@`;o; ;!{ ;ih;"0;@`;iho;;T;@;i ;	[o;;["background-color;o;;;;"#DADCFF;@;;;@;i ;	[ ;im;il;["tr.odd td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ilo;;["odd;@É;il;@É;o; ;!{ ;il;"0o;
+;[o;#	;$0;["td;@É;ilo;;["sorting_2;@É;il;@É;o; ;!{ ;il;"0;@É;ilo;;T;@;i ;	[o;;["background-color;o;;;;"#E0E2FF;@;;;@;i ;	[ ;iq;ip;["tr.odd td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ipo;;["odd;@¶;ip;@¶;o; ;!{ ;ip;"0o;
+;[o;#	;$0;["td;@¶;ipo;;["sorting_3;@¶;ip;@¶;o; ;!{ ;ip;"0;@¶;ipo;;T;@;i ;	[o;;["background-color;o;;;;"#EAEBFF;@;;;@;i ;	[ ;iu;it;["tr.even td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ito;;["	even;@…;it;@…;o; ;!{ ;it;"0o;
+;[o;#	;$0;["td;@…;ito;;["sorting_1;@…;it;@…;o; ;!{ ;it;"0;@…;ito;;T;@;i ;	[o;;["background-color;o;;;;"#F2F3FF;@;;;@;i ;	[ ;iy;ix;["tr.even td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ixo;;["	even;@Ï;ix;@Ï;o; ;!{ ;ix;"0o;
+;[o;#	;$0;["td;@Ï;ixo;;["sorting_2;@Ï;ix;@Ï;o; ;!{ ;ix;"0;@Ï;ixo;;T;@;i ;	[o;;["background-color;o;;;;"#F9F9FF;@;;;@;i ;	[ ;i};i|;["tr.even td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i|o;;["	even;@	;i|;@	;o; ;!{ ;i|;"0o;
+;[o;#	;$0;["td;@	;i|o;;["sorting_3;@	;i|;@	;o; ;!{ ;i|;"0;@	;i|o;
+
+;;;["//* For the Conditional-CSS grading rows */;@;	[ ;iÅo;
+
+;;;["|/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */;@;	[ ;iÇo;;T;@;i ;	[o;;["background-color;o;;;;"#c4ffc4;@;;;@;i ;	[ ;iå;iã;["tr.odd.gradeA td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ião;;["odd;@:	;ião;;["gradeA;@:	;iã;@:	;o; ;!{ ;iã;"0o;
+;[o;#	;$0;["td;@:	;ião;;["sorting_1;@:	;iã;@:	;o; ;!{ ;iã;"0;@:	;ião;;T;@;i ;	[o;;["background-color;o;;;;"#d1ffd1;@;;;@;i ;	[ ;iê;iè;["tr.odd.gradeA td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ièo;;["odd;@`	;ièo;;["gradeA;@`	;iè;@`	;o; ;!{ ;iè;"0o;
+;[o;#	;$0;["td;@`	;ièo;;["sorting_2;@`	;iè;@`	;o; ;!{ ;iè;"0;@`	;ièo;;T;@;i ;	[o;;["background-color;o;;;;"#d1ffd1;@;;;@;i ;	[ ;iî;iì;["tr.odd.gradeA td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iìo;;["odd;@Ü	;iìo;;["gradeA;@Ü	;iì;@Ü	;o; ;!{ ;iì;"0o;
+;[o;#	;$0;["td;@Ü	;iìo;;["sorting_3;@Ü	;iì;@Ü	;o; ;!{ ;iì;"0;@Ü	;iìo;;T;@;i ;	[o;;["background-color;o;;;;"#d5ffd5;@;;;@;i ;	[ ;iò;ió;[" tr.even.gradeA td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ióo;;["	even;@¨	;ióo;;["gradeA;@¨	;ió;@¨	;o; ;!{ ;ió;"0o;
+;[o;#	;$0;["td;@¨	;ióo;;["sorting_1;@¨	;ió;@¨	;o; ;!{ ;ió;"0;@¨	;ióo;;T;@;i ;	[o;;["background-color;o;;;;"#e2ffe2;@;;;@;i ;	[ ;iú;iõ;[" tr.even.gradeA td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iõo;;["	even;@“	;iõo;;["gradeA;@“	;iõ;@“	;o; ;!{ ;iõ;"0o;
+;[o;#	;$0;["td;@“	;iõo;;["sorting_2;@“	;iõ;@“	;o; ;!{ ;iõ;"0;@“	;iõo;;T;@;i ;	[o;;["background-color;o;;;;"#e2ffe2;@;;;@;i ;	[ ;i†;iü;[" tr.even.gradeA td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iüo;;["	even;@¯	;iüo;;["gradeA;@¯	;iü;@¯	;o; ;!{ ;iü;"0o;
+;[o;#	;$0;["td;@¯	;iüo;;["sorting_3;@¯	;iü;@¯	;o; ;!{ ;iü;"0;@¯	;iüo;;T;@;i ;	[o;;["background-color;o;;;;"#c4c4ff;@;;;@;i ;	[ ;i§;i£;["tr.odd.gradeC td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i£o;;["odd;@
+;i£o;;["gradeC;@
+;i£;@
+;o; ;!{ ;i£;"0o;
+;[o;#	;$0;["td;@
+;i£o;;["sorting_1;@
+;i£;@
+;o; ;!{ ;i£;"0;@
+;i£o;;T;@;i ;	[o;;["background-color;o;;;;"#d1d1ff;@;;;@;i ;	[ ;i®;iß;["tr.odd.gradeC td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;ißo;;["odd;@D
+;ißo;;["gradeC;@D
+;iß;@D
+;o; ;!{ ;iß;"0o;
+;[o;#	;$0;["td;@D
+;ißo;;["sorting_2;@D
+;iß;@D
+;o; ;!{ ;iß;"0;@D
+;ißo;;T;@;i ;	[o;;["background-color;o;;;;"#d1d1ff;@;;;@;i ;	[ ;i¨;i´;["tr.odd.gradeC td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i´o;;["odd;@j
+;i´o;;["gradeC;@j
+;i´;@j
+;o; ;!{ ;i´;"0o;
+;[o;#	;$0;["td;@j
+;i´o;;["sorting_3;@j
+;i´;@j
+;o; ;!{ ;i´;"0;@j
+;i´o;;T;@;i ;	[o;;["background-color;o;;;;"#d5d5ff;@;;;@;i ;	[ ;i∞;iØ;[" tr.even.gradeC td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iØo;;["	even;@ê
+;iØo;;["gradeC;@ê
+;iØ;@ê
+;o; ;!{ ;iØ;"0o;
+;[o;#	;$0;["td;@ê
+;iØo;;["sorting_1;@ê
+;iØ;@ê
+;o; ;!{ ;iØ;"0;@ê
+;iØo;;T;@;i ;	[o;;["background-color;o;;;;"#e2e2ff;@;;;@;i ;	[ ;i¥;i≥;[" tr.even.gradeC td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i≥o;;["	even;@∂
+;i≥o;;["gradeC;@∂
+;i≥;@∂
+;o; ;!{ ;i≥;"0o;
+;[o;#	;$0;["td;@∂
+;i≥o;;["sorting_2;@∂
+;i≥;@∂
+;o; ;!{ ;i≥;"0;@∂
+;i≥o;;T;@;i ;	[o;;["background-color;o;;;;"#e2e2ff;@;;;@;i ;	[ ;i∏;i∑;[" tr.even.gradeC td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i∑o;;["	even;@‹
+;i∑o;;["gradeC;@‹
+;i∑;@‹
+;o; ;!{ ;i∑;"0o;
+;[o;#	;$0;["td;@‹
+;i∑o;;["sorting_3;@‹
+;i∑;@‹
+;o; ;!{ ;i∑;"0;@‹
+;i∑o;;T;@;i ;	[o;;["background-color;o;;;;"#ffc4c4;@;;;@;i ;	[ ;iº;iª;["tr.odd.gradeX td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iªo;;["odd;@;iªo;;["gradeX;@;iª;@;o; ;!{ ;iª;"0o;
+;[o;#	;$0;["td;@;iªo;;["sorting_1;@;iª;@;o; ;!{ ;iª;"0;@;iªo;;T;@;i ;	[o;;["background-color;o;;;;"#ffd1d1;@;;;@;i ;	[ ;i¿;iø;["tr.odd.gradeX td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iøo;;["odd;@(;iøo;;["gradeX;@(;iø;@(;o; ;!{ ;iø;"0o;
+;[o;#	;$0;["td;@(;iøo;;["sorting_2;@(;iø;@(;o; ;!{ ;iø;"0;@(;iøo;;T;@;i ;	[o;;["background-color;o;;;;"#ffd1d1;@;;;@;i ;	[ ;iƒ;i√;["tr.odd.gradeX td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i√o;;["odd;@N;i√o;;["gradeX;@N;i√;@N;o; ;!{ ;i√;"0o;
+;[o;#	;$0;["td;@N;i√o;;["sorting_3;@N;i√;@N;o; ;!{ ;i√;"0;@N;i√o;;T;@;i ;	[o;;["background-color;o;;;;"#ffd5d5;@;;;@;i ;	[ ;i»;i«;[" tr.even.gradeX td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i«o;;["	even;@t;i«o;;["gradeX;@t;i«;@t;o; ;!{ ;i«;"0o;
+;[o;#	;$0;["td;@t;i«o;;["sorting_1;@t;i«;@t;o; ;!{ ;i«;"0;@t;i«o;;T;@;i ;	[o;;["background-color;o;;;;"#ffe2e2;@;;;@;i ;	[ ;iÃ;iÀ;[" tr.even.gradeX td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iÀo;;["	even;@ö;iÀo;;["gradeX;@ö;iÀ;@ö;o; ;!{ ;iÀ;"0o;
+;[o;#	;$0;["td;@ö;iÀo;;["sorting_2;@ö;iÀ;@ö;o; ;!{ ;iÀ;"0;@ö;iÀo;;T;@;i ;	[o;;["background-color;o;;;;"#ffe2e2;@;;;@;i ;	[ ;i–;iœ;[" tr.even.gradeX td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iœo;;["	even;@¿;iœo;;["gradeX;@¿;iœ;@¿;o; ;!{ ;iœ;"0o;
+;[o;#	;$0;["td;@¿;iœo;;["sorting_3;@¿;iœ;@¿;o; ;!{ ;iœ;"0;@¿;iœo;;T;@;i ;	[o;;["background-color;o;;;;"#c4c4c4;@;;;@;i ;	[ ;i‘;i”;["tr.odd.gradeU td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i”o;;["odd;@Ê;i”o;;["gradeU;@Ê;i”;@Ê;o; ;!{ ;i”;"0o;
+;[o;#	;$0;["td;@Ê;i”o;;["sorting_1;@Ê;i”;@Ê;o; ;!{ ;i”;"0;@Ê;i”o;;T;@;i ;	[o;;["background-color;o;;;;"#d1d1d1;@;;;@;i ;	[ ;iÿ;i◊;["tr.odd.gradeU td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i◊o;;["odd;@;i◊o;;["gradeU;@;i◊;@;o; ;!{ ;i◊;"0o;
+;[o;#	;$0;["td;@;i◊o;;["sorting_2;@;i◊;@;o; ;!{ ;i◊;"0;@;i◊o;;T;@;i ;	[o;;["background-color;o;;;;"#d1d1d1;@;;;@;i ;	[ ;i‹;i€;["tr.odd.gradeU td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i€o;;["odd;@2;i€o;;["gradeU;@2;i€;@2;o; ;!{ ;i€;"0o;
+;[o;#	;$0;["td;@2;i€o;;["sorting_3;@2;i€;@2;o; ;!{ ;i€;"0;@2;i€o;;T;@;i ;	[o;;["background-color;o;;;;"#d5d5d5;@;;;@;i ;	[ ;i‡;iﬂ;[" tr.even.gradeU td.sorting_1;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iﬂo;;["	even;@X;iﬂo;;["gradeU;@X;iﬂ;@X;o; ;!{ ;iﬂ;"0o;
+;[o;#	;$0;["td;@X;iﬂo;;["sorting_1;@X;iﬂ;@X;o; ;!{ ;iﬂ;"0;@X;iﬂo;;T;@;i ;	[o;;["background-color;o;;;;"#e2e2e2;@;;;@;i ;	[ ;i‰;i„;[" tr.even.gradeU td.sorting_2;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;i„o;;["	even;@~;i„o;;["gradeU;@~;i„;@~;o; ;!{ ;i„;"0o;
+;[o;#	;$0;["td;@~;i„o;;["sorting_2;@~;i„;@~;o; ;!{ ;i„;"0;@~;i„o;;T;@;i ;	[o;;["background-color;o;;;;"#e2e2e2;@;;;@;i ;	[ ;iË;iÁ;[" tr.even.gradeU td.sorting_3;o;;[o;;[o;
+;[o;#	;$0;["tr;" ;iÁo;;["	even;@§;iÁo;;["gradeU;@§;iÁ;@§;o; ;!{ ;iÁ;"0o;
+;[o;#	;$0;["td;@§;iÁo;;["sorting_3;@§;iÁ;@§;o; ;!{ ;iÁ;"0;@§;iÁo;
+
+;;;["'/*
+ * Row highlighting example
+ */;@;	[ ;iÏo;;T;@;i ;	[o;;["background-color;o;;;;"#ECFFB3;@;;;@;i ;	[ ;i;iÔ;["V.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted;o;;[o;;[	o;
+;[o;;["ex_highlight;" ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o:Sass::Selector::Id;["example;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o;#	;$0;["
+tbody;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o;#	;$0;["tr;@Œ;iÔo;;["	even;@Œ;iÔo;-
+;.0;["
+hover;;/;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;;[	o;
+;[o;0;["example;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o;#	;$0;["
+tbody;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o;#	;$0;["tr;@Œ;iÔo;;["	even;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0o;
+;[o;#	;$0;["td;@Œ;iÔo;;["highlighted;@Œ;iÔ;@Œ;o; ;!{ ;iÔ;"0;@Œ;iÔo;;T;@;i ;	[o;;["background-color;o;;;;"#E6FF99;@;;;@;i ;	[ ;iÙ;iÛ;["T.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted;o;;[o;;[	o;
+;[o;;["ex_highlight;" ;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;0;["example;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;#	;$0;["
+tbody;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;#	;$0;["tr;@#;iÛo;;["odd;@#;iÛo;-
+;.0;["
+hover;;/;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;;[	o;
+;[o;0;["example;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;#	;$0;["
+tbody;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;#	;$0;["tr;@#;iÛo;;["odd;@#;iÛ;@#;o; ;!{ ;iÛ;"0o;
+;[o;#	;$0;["td;@#;iÛo;;["highlighted;@#;iÛ;@#;o; ;!{ ;iÛ;"0;@#;iÛ;i

@@ -3509,3 +3509,8 @@ body.vjs-full-window {
 .mll, .mhl, .mal {
   margin-left: 20px;
 }
+
+/* line 39, ../sass/flat-ui.scss */
+.navbar-inner {
+  border-radius: 0;
+}

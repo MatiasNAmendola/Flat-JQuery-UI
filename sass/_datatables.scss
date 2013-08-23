@@ -1,8 +1,8 @@
 span.DataTables_sort_icon.ui-icon{
-	display:inline-block;
+	/*display:inline-block;*/
 }
 div.dataTables_filter{
-	display:inline-block;
+	/*display:inline-block;*/
 }
 div.dataTables_filter input{
 	height:10px;
@@ -16,11 +16,11 @@ div.dataTables_filter label{
 	margin-right: 8px;
 }
 .dataTables_paginate{
-	display: inline;
-float: right;
+	/*display: inline;
+float: right;*/
 }
 .dataTables_info{
-	display:inline;
+	/*display:inline;*/
 	padding-left:8px;
 }
 div.fg-toolbar.ui-toolbar{
@@ -36,12 +36,11 @@ div.dataTables_wrapper .fg-toolbar:first-child{
 	padding: 0;
 }
 div.dataTables_length{
-	display: inline-block;
-float: right;
+	/*display: inline-block;*/
+/*float: right;*/
 margin-top: 15px;
 margin-right: 10px;
 }
 div.dataTables_length select{
 	width:60px;
 }
-

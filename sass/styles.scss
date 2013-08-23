@@ -1,5 +1,6 @@
 @import 'config';
-@import 'datatables';
+@import 'datatables/datatables';
+@import 'datatables/demo_table_jui';
 .base{
 	background-color:$base;
 	color:white;
